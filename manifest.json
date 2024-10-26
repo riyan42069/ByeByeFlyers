@@ -1,26 +1,18 @@
 {
-    "manifest_version": 3,
-    "name": "Bye-Bye Flyers",
-    "version": "1.0",
-    "description": "Unsubscribe from unwanted flyers in Gmail",
-    "permissions": ["identity", "identity.email", "storage"],
-    "oauth2": {
-      "client_id": "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com",
-      "scopes": [
-        "https://www.googleapis.com/auth/gmail.readonly",
-        "https://www.googleapis.com/auth/gmail.modify"
-      ]
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "action": {
-      "default_icons": {
-        "48": "icon48.png",
-        "128": "icon128.png"
-      },
-      "default_title": "Bye-Bye Flyers",
-      "default_popup": "popup.html"
+  "manifest_version": 3,
+  "name": "ByeByeFlyers",
+  "version": "1.0",
+  "description": "Unsubscribe from unwanted flyers in Gmail",
+  "permissions": ["identity", "identity.email"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "48": "icon48.png",
+      "128": "icon128.png"
     }
+  },
+  "oauth2": {
+    "client_id": "YOUR_GOOGLE_CLIENT_ID",
+    "scopes": ["https://www.googleapis.com/auth/gmail.modify"]
   }
-  
+}
