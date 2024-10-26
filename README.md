@@ -1,3 +1,3 @@
-# Bye-Bye Fliers
+# Bye-Bye Flyers
 
 HackUNT 2024

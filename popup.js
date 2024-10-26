@@ -1,1 +1,3 @@
-alert("This is a popup!");
+document.getElementById("unsubscribe").addEventListener("click", () => {
+  chrome.runtime.sendMessage({ action: "startUnsubscribe" });
+});

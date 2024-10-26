@@ -1,9 +1,25 @@
 {
     "manifest_version": 3,
-    "name": "Bye-Bye Flyers",
-    "description": "A chrome extension for unsubscribing from unwanted newsletters and emails with a single click.",
+    "name": "ByeByeFlyers",
     "version": "1.0",
+    "description": "Unsubscribe from unwanted flyers in Gmail",
+    "permissions": ["identity", "identity.email"],
+    "oauth2": {
+      "client_id": "YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly",
+        "https://www.googleapis.com/auth/gmail.modify"
+      ]
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
     "action": {
-      "default_popup": "hello.html"
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
     }
   }
+  
