@@ -20,6 +20,26 @@ body {
 
 #titleBar {
   background-color: #5605df;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: #ffa500;
+}
+
+#titleBar .spooky-title {
+  -webkit-text-stroke: black;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    1px 1px 0 black;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.container .spooky-button {
+  background-color: #a4a3df;
+  color: black;
+  font-family: "Irish Grover", cursive !important;
+  width: 40%;
 }
 
 .text-center{
