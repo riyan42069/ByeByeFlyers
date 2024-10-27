@@ -22,7 +22,8 @@ body {
   background-color: #5605df;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   padding: 10px;
   color: #ffa500;
 }
@@ -31,7 +32,6 @@ body {
   -webkit-text-stroke: black;
   text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
     1px 1px 0 black;
-  font-size: 40px;
   font-weight: bold;
 }
 

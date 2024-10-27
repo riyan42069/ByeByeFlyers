@@ -1,0 +1,15 @@
+/* Full-page layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Centered Card */
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+

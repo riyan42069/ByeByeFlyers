@@ -5,14 +5,18 @@
   "description": "Unsubscribe from unwanted flyers in Gmail",
   "permissions": ["identity", "identity.email"],
   "action": {
-    "default_popup": "index.html",
-    "default_icon": {
-      "48": "icon48.png",
-      "128": "icon128.png"
-    }
+    "default_popup": "index.html"
   },
   "oauth2": {
-    "client_id": "YOUR_GOOGLE_CLIENT_ID",
-    "scopes": ["https://www.googleapis.com/auth/gmail.modify"]
-  }
+    "client_id": "846131186905-bv91u99v2feddvs5jajrescgicnnm6ak.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.modify",
+      "https://www.googleapis.com/auth/userinfo.profile",
+      "https://www.googleapis.com/auth/userinfo.email"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://accounts.google.com/*"]
 }
